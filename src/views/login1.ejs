@@ -1,0 +1,24 @@
+<h1 style="color: white;margin-top: 20px;margin-left: 5vw;margin-bottom: 40px;">Join us with your account as a recruiter</h1>
+<% if(errormessage){%>
+    <div class="alert alert-danger" role="alert">
+       <%=errormessage%>
+      </div>
+<%}%>
+<form style="min-width: 17rem;margin: auto;max-width: 600px;padding-left: 10px;padding-right: 10px;" action="/postlogin1" method="post">
+    
+    <div class="mb-3">
+      <label for="exampleInputPassword1" class="form-label" style="color: white;">Email</label>
+      <input type="email" class="form-control" id="exampleInputPassword1" name="email" required>
+      
+    </div>
+    <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label" style="color: white;">Create password</label>
+        <input type="password" class="form-control" id="exampleInputPassword1" name="password" required>
+      </div>
+      
+    
+    <button type="submit" class="btn btn-primary">Submit</button>
+    <hr>
+    <h4 style="color: white;">Don't have account, create your account first</h4>
+    <a href="/signup1" class="btn btn-primary">Sign up</a>
+</form>

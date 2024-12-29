@@ -1,0 +1,31 @@
+<div style="background-color: #1c124a;height: 100vh;padding-top: 30px;margin-top: -20px;">
+<h1 style="color: white;margin-top: 20px;margin-left: 5vw;margin-bottom: 40px;">Update this job</h1>
+<form style="min-width: 17rem;margin: auto;max-width: 600px;padding-left: 10px;padding-right: 10px;" action="/update" method="post">
+    <input type="hidden" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="id" value="<%=job.id%>">
+    <div class="mb-3">
+      <label for="exampleInputEmail1" class="form-label" style="color: white;">Job title</label>
+      <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="title" value="<%=job.title%>">
+      
+    </div>
+    <div class="mb-3">
+      <label for="exampleInputPassword1" class="form-label" style="color: white;">Description</label>
+      <input type="text" class="form-control" id="exampleInputPassword1" name="description" value="<%=job.description%>">
+      
+    </div>
+    <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label" style="color: white;">Location</label>
+        <input type="text" class="form-control" id="exampleInputPassword1" name="location" value="<%=job.location%>">
+      </div>
+      <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label" style="color: white;">Salary per month</label>
+        <input type="number" class="form-control" id="exampleInputPassword1" name="salary" value="<%=job.salary%>">
+      </div>
+      <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label" style="color: white;">Company Name</label>
+        <input type="text" class="form-control" id="exampleInputPassword1" name="company" value="<%=job.company%>">
+      </div>
+    
+    <button type="submit" class="btn btn-primary">Submit</button>
+     
+</form>
+</div>

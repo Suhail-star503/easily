@@ -1,0 +1,19 @@
+<div style="display: flex;flex-wrap: wrap;">
+    <% joblist.forEach((job)=>{%>
+        <div class="card" style="width: 20rem;margin: auto;margin-top: 20px;margin-bottom: 10px;margin-left: auto;background-color: #E83399;color: white;">
+            
+            <div class="card-body">
+                <h4 class="card-title"><%=job.title%></h4>
+                <p class="card-text"><%=job.description%></p>
+                <p>Company : <%=job.company%> </p>
+                <p><span><i class="fa-solid fa-location-dot"></i> <%=job.location%></span></p>
+                <p><span><i class="fa-solid fa-dollar-sign"></i> : <%=job.salary%></span></p>
+            </div>
+            
+            <div class="card-body">
+                <a href="/rview/<%=job.id%>" class="btn" style="background-color: #befa4f;">Know more</a>
+            </div>
+        </div>
+       <% }) %>
+    </div>
+    
